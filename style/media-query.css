@@ -5,12 +5,17 @@
         bottom: 50px;
         left: 0;
         text-align: center;
-        backdrop-filter: blur(22px);
+        background: rgb(115 115 115 / 30%);
     }
 }
 
 /* small */
 @media (max-width: 576px) {
+
+    #logo{
+        width: 100%;
+    }
+
     .home-text{
         font-size: 45px;
     }
