@@ -100,7 +100,7 @@
     @keyframes move-up {
         100% {
             position: absolute;
-            top: 130px;
+            top: 100px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -111,24 +111,42 @@
     @keyframes move-up {
         100% {
             position: absolute;
-            top: 130px;
+            top: 100px;
             left: 50%;
             transform: translateX(-50%);
         }
     }
 }
 
-@keyframes move-up-2 {
-    0% {
-        visibility: visible;
-        transform: translateY(100px);
-        opacity: 0;
-    }
+@media (min-width: 768px) {
+    @keyframes move-up-2 {
+        0% {
+            visibility: visible;
+            transform: translateY(100px);
+            opacity: 0;
+        }
 
-    100% {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
+        100% {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    @keyframes move-up-2 {
+        0% {
+            visibility: visible;
+            transform: translateY(100px);
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-200px);
+        }
     }
 }
 
