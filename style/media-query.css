@@ -5,7 +5,7 @@
         bottom: 50px;
         left: 0;
         text-align: center;
-        backdrop-filter: invert(15%);
+        backdrop-filter: blur(22px);
     }
 }
 
@@ -13,6 +13,10 @@
 @media (max-width: 576px) {
     .home-text{
         font-size: 45px;
+    }
+
+    .logo-title{
+        font-size: 15px;
     }
     
     #expanded-menu{
