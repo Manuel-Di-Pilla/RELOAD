@@ -1,0 +1,27 @@
+@media (max-width: 768px){
+    #home-desc{
+        width: 100%;
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        text-align: center;
+        backdrop-filter: invert(15%);
+    }
+}
+
+/* small */
+@media (max-width: 576px) {
+    .home-text{
+        font-size: 45px;
+    }
+    
+    #expanded-menu{
+        display: none;
+    }
+
+    #small-menu{
+        display: block;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+}

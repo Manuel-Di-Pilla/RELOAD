@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/aos.css">
+    <link rel="stylesheet" href="style/animation.css">
+    <link rel="stylesheet" href="style/media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header class="fixed" role="banner">
+        
+        <!-- full page menu -->
+        <div id="expanded-menu" class="navbar-style">
+            <ul>
+                <li><a href="#home" class="white">Home</a></li>
+                <li><a href="#about" class="white">Chi Siamo</a></li>
+                <li><a href="#skills" class="white">Lavori</a></li>
+                <li><a href="#mywork" class="white">Shop</a></li>
+                <li><a href="#contatti" class="white">Contatti</a></li>
+            </ul>
+        </div>
+
+        <!-- hidden menu -->
+        <div id="small-menu">
+            <i class="fa-solid fa-bars white" style="font-size: 35px;"></i>
+        </div>
+
+        <div id="hidden-menu" class="display-none">
+            <div id="close" class="close-menu">
+                <i class="fa-solid fa-xmark white" style="font-size: 35px;"></i>
+            </div>
+            <ul>
+                <li><a href="#home" class="white">Home</a></li>
+                <li><a href="#about" class="white">Chi Siamo</a></li>
+                <li><a href="#skills" class="white">Lavori</a></li>
+                <li><a href="#mywork" class="white">Shop</a></li>
+                <li><a href="#contatti" class="white">Contatti</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div id="start" style="overflow: hidden; background-color: #353535;">
+        <div id="background" style="width: 100%; height: 100%;"></div>
+        <div id="filigrana"></div>
+        <div id="container-logo">
+            <img src="img/logo-1.png" id="logo">
+            <div style="width: 100%; margin-top: 10px; display: flex; justify-content: center;">
+                <div style="margin-right: 5px; color: white; font-size: 19px;" class="fade-in-bottom-1 logo-title" id="logo-title-1"><b>PULIZIA,</b></div>
+                <div style="margin-right: 5px; color: white; font-size: 19px;" class="fade-in-bottom-2 logo-title" id="logo-title-2"><b>PRECISIONE</b></div>
+                <div style="color: white; font-size: 19px;" class="fade-in-bottom-3 logo-title" id="logo-title-3"><b>E TRASPARENZA</b></div>
+            </div>
+        </div>
+
+        <div id="home-desc" style="visibility: hidden;">
+            <p class="home-text"><b>PULIZIA,</b></p>
+            <p class="home-text"><b>PRECISIONE E</b></p>
+            <p class="home-text"><b>TRASPARENZA</b></p>
+        </div>
+    </div>
+
+
+    <script src="script/bootstrap/bootstrap.min.js"></script>
+    <script src="script/aos.js"></script>
+
+
+    <script src="script/main.js"></script>
+
+</body>
+</html>
