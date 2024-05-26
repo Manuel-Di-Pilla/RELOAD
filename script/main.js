@@ -20,15 +20,13 @@ jQuery(document).ready(function($) {
     }, 3000);
 
     $('#small-menu').click(function () {
-        $('#hidden-menu').removeClass('display-none scale-out-tl').addClass('scale-in-tl');
         $('#small-menu').addClass('display-none');
+        $('#hidden-menu').removeClass('display-none slide-out-top').addClass('slide-in-top');
     });
 
     $('#close').click(function () {
-        $('#hidden-menu').removeClass('scale-in-tl').addClass('scale-out-tl');
-        setTimeout(() => {
-            $('#small-menu').removeClass('display-none');
-        }, 400);
+        $('#hidden-menu').addClass('slide-out-top');
+        $('#small-menu').removeClass('display-none');
     });
 
  })

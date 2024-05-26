@@ -125,19 +125,19 @@
 
 #small-menu{
   display: none;
+  position: fixed;
+  left: 10px;
+  top: 5px;
 }
 
 #hidden-menu{
   width: 100%;
   background-color: #353535;
+  border-radius: 0 0 10% 10%;
 }
 
 .close-menu{
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 10px;
-  padding-top: 5px;
 }
 
 
