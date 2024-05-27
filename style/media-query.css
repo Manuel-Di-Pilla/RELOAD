@@ -9,6 +9,12 @@
     }
 }
 
+@media (min-width: 769px) {
+    #servizi{
+        padding-top: 70px;
+    }
+}
+
 /* small */
 @media (max-width: 576px) {
 

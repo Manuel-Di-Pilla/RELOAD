@@ -9,6 +9,31 @@
     font-family: "customFont";
 }
 
+.primary-color {
+  color: #F9B233;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.display-block {
+  display: block;
+}
+
+.visibility-visible {
+  visibility: visible;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.manu-black{
+  background-color: black !important;
+}
+
+
 #start{
     width: 100%;
     height: 100vh;
@@ -97,6 +122,12 @@
 .navbar-style ul li a{
   text-decoration: none;
   font-size: 18px;
+  padding-top: 7px;
+  width: 125px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 #hidden-menu ul {
@@ -140,20 +171,90 @@
   width: 100%;
 }
 
-
-
-.display-none {
-  display: none !important;
+.servizi-cls{
+  width: 100%;
+  background: url(../img/services.png) ;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
 }
 
-.display-block {
-  display: block;
+#card-1:hover{
+  animation:scale-up-center .5s cubic-bezier(.39, .575, .565, 1.000) both;
+  cursor: default;
+}
+#card-2:hover {
+  animation: scale-up-center .5s cubic-bezier(.39, .575, .565, 1.000) both;
+  cursor: default;
+}
+#card-3:hover {
+  animation: scale-up-center .5s cubic-bezier(.39, .575, .565, 1.000) both;
+  cursor: default;
 }
 
-.visibility-visible{
-  visibility: visible;
+@keyframes scale-up-center {
+  100% {
+    transform: scale(1.1)
+  }
 }
 
-.visibility-hidden {
-  visibility: hidden;
+.title-page{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: black;
+  width: 100%;
+  font-size: 40px;
+}
+
+.title-page span{
+  color: black;
+  font-size: 35px;
+  border-bottom: 3px solid #F9B233;
+  padding-bottom: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.service-card{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  margin: 30px 0;
+  -webkit-box-shadow: 0px 1px 11px 0px #292424;
+  box-shadow: 0px 1px 11px 0px #292424;
+}
+
+.card-icon i {
+  color: #F9B233;
+  font-size: 70px;
+}
+
+.title-card{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.title-card span{
+  color: black;
+  border-bottom: 3px solid #F9B233;
+  padding-bottom: 2px;
+  font-size: 25px;
+}
+
+.c-card-body{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.active{
+  background-color: #F9B233;
 }

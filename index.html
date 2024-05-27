@@ -19,11 +19,11 @@
         <!-- full page menu -->
         <div id="expanded-menu" class="navbar-style visibility-hidden">
             <ul>
-                <li><a href="#home" class="white">Home</a></li>
-                <li><a href="#about" class="white">Chi Siamo</a></li>
-                <li><a href="#skills" class="white">Lavori</a></li>
-                <li><a href="#mywork" class="white">Shop</a></li>
-                <li><a href="#contatti" class="white">Contatti</a></li>
+                <li><a href="#start" id="1" class="white link active">Home</a></li>
+                <li><a href="#servizi" id="2" class="white link">Chi Siamo</a></li>
+                <li><a href="#skills" id="3" class="white link">Lavori</a></li>
+                <li><a href="#mywork" id="4" class="white link">Shop</a></li>
+                <li><a href="#contatti" id="5" class="white link">Contatti</a></li>
             </ul>
         </div>
 
@@ -37,17 +37,17 @@
                 <i class="fa-solid fa-xmark white" style="font-size: 35px; display: inline-block; padding-left: 10px; padding-top: 5px;"></i>
             </div>
             <ul>
-                <li><a href="#home" class="white">Home</a></li>
-                <li><a href="#about" class="white">Chi Siamo</a></li>
-                <li><a href="#skills" class="white">Lavori</a></li>
-                <li><a href="#mywork" class="white">Shop</a></li>
-                <li><a href="#contatti" class="white">Contatti</a></li>
+                <li><a href="#home" class="white link0">Home</a></li>
+                <li><a href="#about" class="white link1">Chi Siamo</a></li>
+                <li><a href="#skills" class="white link2">Lavori</a></li>
+                <li><a href="#mywork" class="white link3">Shop</a></li>
+                <li><a href="#contatti" class="white link4">Contatti</a></li>
             </ul>
         </div>
 
     </header>
 
-    <div id="start" style="overflow: hidden; background-color: #353535;">
+    <div id="start" class="sections" style="overflow: hidden; background-color: #353535;">
         <div id="background" style="width: 100%; height: 100%;"></div>
         <div id="filigrana"></div>
         <div id="container-logo">
@@ -68,12 +68,86 @@
         </div>
     </div>
 
+    <div id="main" class="display-none">
 
-    <script src="script/bootstrap/bootstrap.min.js"></script>
+        <!-- SEZIONE SERIVIZI -->
+        <div id="servizi" class="sections">
+
+            <div class="title-page">
+                <span>Serivizi</span>
+            </div>
+
+            <div class="servizi-cls">
+
+                <div class="service-card" id="card-1"  data-aos="fade-right" data-aos-duration="1000">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-pump-medical"></i>
+                    </div>
+                    <div class="title-card" style="margin-top: 18px;">
+                        <span>Igenizzazione</span>
+                    </div>
+                    <div class="c-card-body">
+                        <span>
+                            We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from 1 to 5. If something
+                            goes wrong,
+                            we will come and fix everything. <span class="primary-color">We do not want to make money on dissatisfied
+                                customers.</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="service-card" id="card-2" style="padding-top: 12px;"  data-aos="fade-right" data-aos-duration="1000">
+                    <div class="card-icon">
+                        <img src="./img/pulizia.png" style="display: inline-block; margin-right: 30px;" alt="">
+                    </div>
+                    <div class="title-card">
+                        <span>Pulizia</span>
+                    </div>
+                    <div class="c-card-body">
+                        <span>
+                            We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from 1 to 5. If something
+                            goes wrong,
+                            we will come and fix everything. <span class="primary-color">We do not want to make money on dissatisfied
+                                customers.</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="service-card" id="card-3" style="padding-top: 12px;"  data-aos="fade-right" data-aos-duration="1000">
+                    <div class="card-icon">
+                        <img src="./img/attrezzatura.png" style="width: 100%; height: 100%;" alt="">
+                    </div>
+                    <div class="title-card" style="margin-top: 18px;">
+                        <span>Attrezzatura</span>
+                    </div>
+                    <div class="c-card-body">
+                        <span>
+                            We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from 1 to 5. If something
+                            goes wrong,
+                            we will come and fix everything. <span class="primary-color">We do not want to make money on dissatisfied
+                                customers.</span>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SEZIONE CHI SIAMO -->
+        <div style="height: 500px; width: 100%;">
+
+        </div>
+
+    </div>
+
+
     <script src="script/aos.js"></script>
+    <script src="script/bootstrap/bootstrap.min.js"></script>
 
 
     <script src="script/main.js"></script>
+    <script src="script/menu_scroll.js"></script>
 
 </body>
 </html>
