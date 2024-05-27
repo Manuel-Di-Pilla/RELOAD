@@ -148,6 +148,8 @@
 
 #hidden-menu ul li a {
   text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 .white {
@@ -182,25 +184,6 @@
   padding: 20px 0;
 }
 
-#card-1:hover{
-  animation:scale-up-center .5s cubic-bezier(.39, .575, .565, 1.000) both;
-  cursor: default;
-}
-#card-2:hover {
-  animation: scale-up-center .5s cubic-bezier(.39, .575, .565, 1.000) both;
-  cursor: default;
-}
-#card-3:hover {
-  animation: scale-up-center .5s cubic-bezier(.39, .575, .565, 1.000) both;
-  cursor: default;
-}
-
-@keyframes scale-up-center {
-  100% {
-    transform: scale(1.1)
-  }
-}
-
 .title-page{
   text-align: center;
   margin-top: 20px;
@@ -226,9 +209,9 @@
   align-items: center;
   border-radius: 10px;
   background-color: white;
-  width: 400px;
+  width: auto;
   padding: 20px;
-  margin: 30px 0;
+  margin: 30px 30px;
   -webkit-box-shadow: 0px 1px 11px 0px #292424;
   box-shadow: 0px 1px 11px 0px #292424;
 }
@@ -257,4 +240,30 @@
 
 .active{
   background-color: #F9B233;
+}
+
+.servizi-cls-mobile{
+  background: url(../img/services.png);
+  background-size: contain;
+  background-position: center;
+}
+
+.splide__arrow--next{
+  background-color: #F9B233 !important;
+}
+
+.splide__arrow--prev{
+  background-color: #F9B233 !important;
+}
+
+.splide__arrow svg{
+  fill: white !important;
+}
+
+.splide__pagination__page.is-active{
+  background-color: #F9B233 !important;
+}
+
+.splide__pagination__page {
+  background-color: black !important;
 }

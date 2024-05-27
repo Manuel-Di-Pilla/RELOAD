@@ -12,7 +12,7 @@ jQuery(document).ready(function ($) {
     var links = document.querySelectorAll(".link");
     var sections = document.querySelectorAll('.sections');
     window.onscroll = function () {
-        var headerOffset = header.offsetHeight;
+
         var current = 'home';
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;

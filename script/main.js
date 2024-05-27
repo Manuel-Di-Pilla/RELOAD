@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 
             $("#container-logo").addClass("move-up");
             $("#home-desc").addClass("move-up-2");
-            $("#expanded-menu").removeClass("visibility-hidden").addClass("visibility-visible slide-in-top");
+            $("#expanded-menu").removeClass("display-none").addClass("display-block slide-in-top");
             $('#small-menu').removeClass('display-none');
 
             setTimeout(() => {
@@ -20,6 +20,14 @@ jQuery(document).ready(function($) {
                     easing: 'slide',
                     once: false
                 });
+
+                var splide = new Splide('.splide', {
+                    type: 'loop',
+                    perPage: 1,
+                    autoplay: true,
+                });
+
+                splide.mount();
             }, 1200);
 
         }, 200);

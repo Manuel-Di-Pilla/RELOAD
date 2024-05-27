@@ -219,3 +219,9 @@
         opacity: 1;
     }
 }
+
+@keyframes scale-up-center {
+    100% {
+        transform: scale(1.1)
+    }
+}

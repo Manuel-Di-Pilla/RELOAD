@@ -9,9 +9,47 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
     #servizi{
         padding-top: 70px;
+    }
+}
+
+@media (min-width: 992px) {
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+
+    #card-1:hover {
+        animation: scale-up-center .5s cubic-bezier(.39, .575, .565, 1.000) both;
+        cursor: default;
+    }
+
+    #card-2:hover {
+        animation: scale-up-center .5s cubic-bezier(.39, .575, .565, 1.000) both;
+        cursor: default;
+    }
+
+    #card-3:hover {
+        animation: scale-up-center .5s cubic-bezier(.39, .575, .565, 1.000) both;
+        cursor: default;
+    }
+}
+@media (max-width: 991px) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .service-card{
+        width: auto !important;
+        margin: 30px !important;
     }
 }
 
