@@ -15,6 +15,15 @@
     }
 }
 
+@media screen and (max-height: 792px) and (min-width: 770px) {
+
+}
+
+@media (max-height: 645px){
+
+}
+
+
 @media (min-width: 992px) {
     .mobile{
         display: none;
@@ -53,6 +62,18 @@
     }
 }
 
+@media (max-width: 880px){
+    #expanded-menu {
+        display: none;
+    }
+
+    #small-menu {
+        display: block;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+}
+
 /* small */
 @media (max-width: 576px) {
 
@@ -66,15 +87,5 @@
 
     .logo-title{
         font-size: 15px;
-    }
-    
-    #expanded-menu{
-        display: none;
-    }
-
-    #small-menu{
-        display: block;
-        margin-left: 10px;
-        margin-top: 5px;
     }
 }
