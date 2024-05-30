@@ -1,12 +1,6 @@
 jQuery(document).ready(function($) {
     
-    $(window).bind("orientationchange", function () {
-        var orientation = window.orientation;
-        var new_orientation = (orientation) ? 0 : 180 + orientation;
-        $('body').css({
-            "-webkit-transform": "rotate(" + new_orientation + "deg)"
-        });
-    });
+    window.screen.orientation.lock("natural");
 
     setTimeout(function() { 
         $("#background").addClass("background-image puff-in-center");
