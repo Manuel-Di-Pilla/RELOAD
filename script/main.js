@@ -1,4 +1,8 @@
 jQuery(document).ready(function($) {
+    
+    var myScreenOrientation = window.screen.orientation;
+
+    myScreenOrientation.lock("portrait");
 
     setTimeout(function() { 
         $("#background").addClass("background-image puff-in-center");
