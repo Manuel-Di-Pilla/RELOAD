@@ -268,3 +268,21 @@
 .splide__pagination__page {
   background-color: black !important;
 }
+
+.turnDeviceNotification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 999999;
+  background-color: #353535;
+  width: 100vw;
+  height: 100vh;
+}
+
+.turnDeviceNotification div{
+  color: white;
+  font-size: 40px;
+}

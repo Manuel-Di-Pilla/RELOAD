@@ -1,4 +1,26 @@
 jQuery(document).ready(function($) {
+    
+    var event = new Event('change');
+    window.addEventListener(
+        "change",
+        (e) => {
+            if (window.innerHeight < 500) {
+                $('.turnDeviceNotification').css('display', 'flex').css('flex-direction', 'column').css('align-items', 'center').css('justify-content', 'center');
+            } else {
+                $('.turnDeviceNotification').css('display', 'none');
+            }
+        },
+        false,
+    );
+    window.dispatchEvent(event);
+
+    screen.orientation.addEventListener('change', function (e) {
+        if (e.currentTarget.type === 'landscape-primary' && window.innerWidth <= 576) {
+            $('.turnDeviceNotification').css('display', 'flex').css('flex-direction', 'column').css('align-items', 'center').css('justify-content', 'center');
+        } else {
+            $('.turnDeviceNotification').css('display', 'none');
+        }
+    })
 
     setTimeout(function() { 
         $("#background").addClass("background-image puff-in-center");
