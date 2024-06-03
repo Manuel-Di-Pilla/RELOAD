@@ -65,4 +65,11 @@ jQuery(document).ready(function($) {
         $('#small-menu').removeClass('display-none');
     });
 
+    $('#hidden-menu li a').click(() => {
+        setTimeout(() => {
+            $('#hidden-menu').addClass('slide-out-top');
+            $('#small-menu').removeClass('display-none');
+        }, 200);
+    })
+
  })

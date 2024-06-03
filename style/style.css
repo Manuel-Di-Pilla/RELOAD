@@ -1,12 +1,16 @@
 @font-face {
-    font-family: "customFont";
+    font-family: "Liliana";
     src: url(../font/Liliana_Bold.otf);
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(../font/gilroy/Gilroy-SemiBold.ttf);
 }
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "customFont";
+    font-family: "Gilroy";
 }
 
 .primary-color {
@@ -41,7 +45,7 @@
 }
 
 .background-image{
-    background-image: url(../img/background-home.jpg);
+    background-image: url(../img/background-home.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,14 +80,30 @@
     transform: translate(-50%, -50%);
 }
 
+.under-logo {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.under-logo b{
+  font-family: "Liliana";
+  font-size: 15.7px;
+}
+
 #home-desc{
     position: absolute;
     bottom: 50px;
     left: 60px;
 }
 
+#home-desc b {
+    font-family: "Liliana";
+}
+
 .home-text{
-  font-size: 2.5em;
+  font-size: 55px;
   color: white;
   margin: 0;
 }
@@ -183,6 +203,7 @@
   align-items: center;
   padding: 20px 0;
   max-height: 70vh;
+  height: 70vh;
 }
 
 .title-page{

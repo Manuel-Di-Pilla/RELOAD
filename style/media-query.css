@@ -88,4 +88,8 @@
     .logo-title{
         font-size: 15px;
     }
+
+    .under-logo b{
+        font-size: 13px;
+    }
 }
