@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 1025px) {
-    #servizi{
+    #servizi, #chi-siamo{
         padding-top: 70px;
     }
 }

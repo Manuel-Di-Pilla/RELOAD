@@ -193,6 +193,10 @@
   width: 100%;
 }
 
+#servizi{
+  overflow: hidden;
+}
+
 .servizi-cls{
   width: 100%;
   background: url(../img/services.png) ;
@@ -306,4 +310,34 @@
 .turnDeviceNotification div{
   color: white;
   font-size: 40px;
+}
+
+#chi-siamo{
+  width: 100%;
+  height: 80vh;
+}
+
+.car{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.car img{
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  margin-left: 30%;
+}
+
+.card-main{
+  height: 100%;
+  width: 30%;
+  border-radius: 10px;
+  border: 1.5px solid #F9B233;
+  position: absolute;
+  left: 20%;
+  backdrop-filter: blur(15px);
 }
