@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="style/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="style/aos.css">
     <link rel="stylesheet" href="style/animation.css">
-    <link rel="stylesheet" href="style/media-query.css">    
+    <link rel="stylesheet" href="style/media-query.css">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
 
     <div class="turnDeviceNotification">
@@ -26,245 +28,295 @@
     </div>
 
 
-    <!-- MENU -->
-    <header class="fixed" role="banner">
+    <span id="main-content">
 
+        <!-- MENU -->
+        <header class="fixed" role="banner">
+    
+    
+            <!-- full page menu -->
+            <div id="expanded-menu" class="navbar-style display-none">
+                <ul>
+                    <li><a href="#start" id="1" class="white link active">Home</a></li>
+                    <li><a href="#servizi" id="2" class="white link">Servizi</a></li>
+                    <li><a href="#chi-siamo" id="3" class="white link">Chi siamo</a></li>
+                    <li><a href="#lavori" id="3" class="white link">Lavori</a></li>
+                    <li><a href="#mywork" id="4" class="white link">Shop</a></li>
+                    <li><a href="#contatti" id="5" class="white link">Contatti</a></li>
+                </ul>
+            </div>
+    
+            <!-- hidden menu -->
+            <div id="small-menu" class="display-none">
+                <i class="fa-solid fa-bars white" style="font-size: 35px; text-shadow: 0px 1px 4px #000;"></i>
+            </div>
+    
+            <div id="hidden-menu" class="display-none">
+                <div id="close" class="close-menu">
+                    <i class="fa-solid fa-xmark white"
+                        style="font-size: 35px; display: inline-block; padding-left: 10px; padding-top: 5px;"></i>
+                </div>
+                <ul>
+                    <li><a href="#start" id="1" class="white link active">Home</a></li>
+                    <li><a href="#servizi" id="2" class="white link">Servizi</a></li>
+                    <li><a href="#chi-siamo" class="white link">Chi siamo</a></li>
+                    <li><a href="#lavori" class="white link">Lavori</a></li>
+                    <li><a href="#mywork" class="white link">Shop</a></li>
+                    <li><a href="#contatti" class="white link">Contatti</a></li>
+                </ul>
+            </div>
+    
+        </header>
+    
+        <!-- HOMEPAGE -->
+        <div id="start" class="sections" style="overflow: hidden; background-color: #353535;">
+            <div id="background" style="width: 100%; height: 100%;"></div>
+            <div id="filigrana"></div>
+            <div id="container-logo">
+                <div style="width: 100%; display: flex; justify-content: center;">
+                    <img src="img/logo-1.png" id="logo">
+                </div>
+                <div class="under-logo">
+                    <div style="margin-right: 5px;" class="fade-in-bottom-1 logo-title" id="logo-title-1"><b>PULIZIA,</b>
+                    </div>
+                    <div style="margin-right: 5px;" class="fade-in-bottom-2 logo-title" id="logo-title-2"><b>PRECISIONE</b>
+                    </div>
+                    <div class="fade-in-bottom-3 logo-title" id="logo-title-3"><b>E TRASPARENZA</b></div>
+                </div>
+    
+            </div>
+    
+            <div id="home-desc" style="visibility: hidden;">
+                <p class="home-text"><b>PULIZIA,</b></p>
+                <p class="home-text"><b>PRECISIONE E</b></p>
+                <p class="home-text"><b>TRASPARENZA</b></p>
+            </div>
+    
+            <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 12px; background-color: #F9B233;">
+            </div>
+        </div>
+    
+    
+        <!-- SERVIZI -->
+        <div id="main" class="display-none">
+    
+            <!-- SEZIONE Servizi -->
+            <div id="servizi" class="sections">
+    
+                <div class="title-page">
+                    <span>Servizi</span>
+                </div>
+                <!-- DESKTOP -->
+                <div class="desktop">
+    
+                    <div class="servizi-cls">
+    
+                        <div class="service-card" id="card-1" data-aos="fade-left" data-aos-delay="1000"
+                            data-aos-duration="1000">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-pump-medical"></i>
+                            </div>
+                            <div class="title-card" style="margin-top: 18px;">
+                                <span>Igienizzazione</span>
+                            </div>
+                            <div class="c-card-body">
+                                <span>
+                                    We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from
+                                    1 to 5. If
+                                    something
+                                    goes wrong,
+                                    we will come and fix everything. <span class="primary-color">We do not want to make
+                                        money on
+                                        dissatisfied
+                                        customers.</span>
+                                </span>
+                            </div>
+                        </div>
+    
+                        <div class="service-card" id="card-2" style="padding-top: 12px;" data-aos="fade-left"
+                            data-aos-delay="500" data-aos-duration="1000">
+                            <div class="card-icon">
+                                <img src="./img/pulizia.png" style="display: inline-block; margin-right: 30px;" alt="">
+                            </div>
+                            <div class="title-card">
+                                <span>Pulizia</span>
+                            </div>
+                            <div class="c-card-body">
+                                <span>
+                                    We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from
+                                    1 to 5. If
+                                    something
+                                    goes wrong,
+                                    we will come and fix everything. <span class="primary-color">We do not want to make
+                                        money on
+                                        dissatisfied
+                                        customers.</span>
+                                </span>
+                            </div>
+                        </div>
+    
+                        <div class="service-card" id="card-3" style="padding-top: 12px;" data-aos="fade-left"
+                            data-aos-duration="1000">
+                            <div class="card-icon">
+                                <img src="./img/attrezzatura.png" style="width: 100%; height: 100%;" alt="">
+                            </div>
+                            <div class="title-card" style="margin-top: 18px;">
+                                <span>Attrezzatura</span>
+                            </div>
+                            <div class="c-card-body">
+                                <span>
+                                    We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from
+                                    1 to 5. If
+                                    something
+                                    goes wrong,
+                                    we will come and fix everything. <span class="primary-color">We do not want to make
+                                        money on
+                                        dissatisfied
+                                        customers.</span>
+                                </span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+                <!-- MOBILE -->
+                <div class="mobile">
         
-        <!-- full page menu -->
-        <div id="expanded-menu" class="navbar-style display-none">
-            <ul>
-                <li><a href="#start" id="1" class="white link active">Home</a></li>
-                <li><a href="#servizi" id="2" class="white link">Servizi</a></li>
-                <li><a href="#chi-siamo" id="3" class="white link">Chi siamo</a></li>
-                <li><a href="#lavori" id="3" class="white link">Lavori</a></li>
-                <li><a href="#mywork" id="4" class="white link">Shop</a></li>
-                <li><a href="#contatti" id="5" class="white link">Contatti</a></li>
-            </ul>
-        </div>
-
-        <!-- hidden menu -->
-        <div id="small-menu" class="display-none">
-            <i class="fa-solid fa-bars white" style="font-size: 35px; text-shadow: 0px 1px 4px #000;"></i>
-        </div>
-
-        <div id="hidden-menu" class="display-none">
-            <div id="close" class="close-menu">
-                <i class="fa-solid fa-xmark white" style="font-size: 35px; display: inline-block; padding-left: 10px; padding-top: 5px;"></i>
+                    <div class="servizi-cls-mobile">
+                        <section class="splide" aria-label="Splide Basic HTML Example">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="service-card" id="card-1">
+                                            <div class="card-icon">
+                                                <i class="fa-solid fa-pump-medical"></i>
+                                            </div>
+                                            <div class="title-card" style="margin-top: 18px;">
+                                                <span>Igienizzazione</span>
+                                            </div>
+                                            <div class="c-card-body">
+                                                <span>
+                                                    We always ask for feedback on cleaning, we ask you to rate the work of the
+                                                    cleaner from 1 to 5. If
+                                                    something
+                                                    goes wrong,
+                                                    we will come and fix everything. <span class="primary-color">We do not want
+                                                        to make money on
+                                                        dissatisfied
+                                                        customers.</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="service-card" id="card-2" style="padding-top: 12px;">
+                                            <div class="card-icon">
+                                                <img src="./img/pulizia.png" style="display: inline-block; margin-right: 30px;"
+                                                    alt="">
+                                            </div>
+                                            <div class="title-card">
+                                                <span>Pulizia</span>
+                                            </div>
+                                            <div class="c-card-body">
+                                                <span>
+                                                    We always ask for feedback on cleaning, we ask you to rate the work of the
+                                                    cleaner from 1 to 5. If
+                                                    something
+                                                    goes wrong,
+                                                    we will come and fix everything. <span class="primary-color">We do not want
+                                                        to make money on
+                                                        dissatisfied
+                                                        customers.</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="service-card" id="card-3" style="padding-top: 12px;">
+                                            <div class="card-icon">
+                                                <img src="./img/attrezzatura.png" style="width: 100%; height: 100%;" alt="">
+                                            </div>
+                                            <div class="title-card" style="margin-top: 18px;">
+                                                <span>Attrezzatura</span>
+                                            </div>
+                                            <div class="c-card-body">
+                                                <span>
+                                                    We always ask for feedback on cleaning, we ask you to rate the work of the
+                                                    cleaner from 1 to 5. If
+                                                    something
+                                                    goes wrong,
+                                                    we will come and fix everything. <span class="primary-color">We do not want
+                                                        to make money on
+                                                        dissatisfied
+                                                        customers.</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+        
+                </div>
             </div>
-            <ul>
-                <li><a href="#start" id="1" class="white link active">Home</a></li>
-                <li><a href="#servizi" id="2" class="white link">Servizi</a></li>
-                <li><a href="#chi-siamo" class="white link">Chi siamo</a></li>
-                <li><a href="#lavori" class="white link">Lavori</a></li>
-                <li><a href="#mywork" class="white link">Shop</a></li>
-                <li><a href="#contatti" class="white link">Contatti</a></li>
-            </ul>
-        </div>
-
-    </header>
-
-    <!-- HOMEPAGE -->
-    <div id="start" class="sections" style="overflow: hidden; background-color: #353535;">
-        <div id="background" style="width: 100%; height: 100%;"></div>
-        <div id="filigrana"></div>
-        <div id="container-logo">
-            <div style="width: 100%; display: flex; justify-content: center;">
-                <img src="img/logo-1.png" id="logo">
-            </div>
-            <div class="under-logo">
-                <div style="margin-right: 5px;" class="fade-in-bottom-1 logo-title" id="logo-title-1"><b>PULIZIA,</b></div>
-                <div style="margin-right: 5px;" class="fade-in-bottom-2 logo-title" id="logo-title-2"><b>PRECISIONE</b></div>
-                <div class="fade-in-bottom-3 logo-title" id="logo-title-3"><b>E TRASPARENZA</b></div>
-            </div>
-
-        </div>
-
-        <div id="home-desc" style="visibility: hidden;">
-            <p class="home-text"><b>PULIZIA,</b></p>
-            <p class="home-text"><b>PRECISIONE E</b></p>
-            <p class="home-text"><b>TRASPARENZA</b></p>
-        </div>
-
-        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 12px; background-color: #F9B233;"></div>
-    </div>
-
-
-    <!-- SERVIZI -->
-    <div id="main" class="display-none">
-
-        <!-- SEZIONE Servizi -->
-        <div id="servizi" class="sections">
-
-            <!-- DESKTOP -->
-            <div class="desktop">
+    
+    
+    
+    
+            <!-- SEZIONE CHI SIAMO -->
+            <div id="chi-siamo" class="sections">
+    
                 <div class="title-page">
-                    <span>Servizi</span>
+                    <span>Chi Siamo</span>
                 </div>
-                
-                <div class="servizi-cls">
-                
-                    <div class="service-card" id="card-1" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
-                        <div class="card-icon">
-                            <i class="fa-solid fa-pump-medical"></i>
-                        </div>
-                        <div class="title-card" style="margin-top: 18px;">
-                            <span>Igienizzazione</span>
-                        </div>
-                        <div class="c-card-body">
-                            <span>
-                                We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from 1 to 5. If
-                                something
-                                goes wrong,
-                                we will come and fix everything. <span class="primary-color">We do not want to make money on
-                                    dissatisfied
-                                    customers.</span>
-                            </span>
-                        </div>
+    
+                <div class="car" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="img/car.png" alt="">
+    
+                    <div class="card-main">
+    
+                        <p class="text-center" data-aos="fade-up" data-aos-delay="300">
+                            We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from 1 to 5.
+                            If
+                            something
+                            goes wrong,
+                            we will come and fix everything. <span class="primary-color">We do not want to make money on
+                                dissatisfied
+                                customers.</span>
+                        </p>
+    
+                        <p class="text-center" data-aos="fade-up" data-aos-delay="600">
+                            We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from 1 to 5.
+                            If
+                            something
+                            goes wrong,
+                            we will come and fix everything. <span class="primary-color">We do not want to make money on
+                                dissatisfied
+                                customers.</span>
+                        </p>
+    
+                        <p class="text-center" data-aos="fade-up" data-aos-delay="900">
+                            We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from 1 to 5.
+                            If
+                            something
+                            goes wrong,
+                            we will come and fix everything. <span class="primary-color">We do not want to make money on
+                                dissatisfied
+                                customers.</span>
+                        </p>
+    
                     </div>
-                
-                    <div class="service-card" id="card-2" style="padding-top: 12px;" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
-                        <div class="card-icon">
-                            <img src="./img/pulizia.png" style="display: inline-block; margin-right: 30px;" alt="">
-                        </div>
-                        <div class="title-card">
-                            <span>Pulizia</span>
-                        </div>
-                        <div class="c-card-body">
-                            <span>
-                                We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from 1 to 5. If
-                                something
-                                goes wrong,
-                                we will come and fix everything. <span class="primary-color">We do not want to make money on
-                                    dissatisfied
-                                    customers.</span>
-                            </span>
-                        </div>
-                    </div>
-                
-                    <div class="service-card" id="card-3" style="padding-top: 12px;" data-aos="fade-left" data-aos-duration="1000">
-                        <div class="card-icon">
-                            <img src="./img/attrezzatura.png" style="width: 100%; height: 100%;" alt="">
-                        </div>
-                        <div class="title-card" style="margin-top: 18px;">
-                            <span>Attrezzatura</span>
-                        </div>
-                        <div class="c-card-body">
-                            <span>
-                                We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from 1 to 5. If
-                                something
-                                goes wrong,
-                                we will come and fix everything. <span class="primary-color">We do not want to make money on
-                                    dissatisfied
-                                    customers.</span>
-                            </span>
-                        </div>
-                    </div>
-                
                 </div>
-                
-                </div>
+    
             </div>
-
-            <!-- MOBILE -->
-            <div class="mobile">
-                
-                <div class="title-page">
-                    <span>Servizi</span>
-                </div>
-
-                <div class="servizi-cls-mobile">
-                    <section class="splide" aria-label="Splide Basic HTML Example">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <div class="service-card" id="card-1">
-                                        <div class="card-icon">
-                                            <i class="fa-solid fa-pump-medical"></i>
-                                        </div>
-                                        <div class="title-card" style="margin-top: 18px;">
-                                            <span>Igienizzazione</span>
-                                        </div>
-                                        <div class="c-card-body">
-                                            <span>
-                                                We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from 1 to 5. If
-                                                something
-                                                goes wrong,
-                                                we will come and fix everything. <span class="primary-color">We do not want to make money on
-                                                    dissatisfied
-                                                    customers.</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="service-card" id="card-2" style="padding-top: 12px;">
-                                        <div class="card-icon">
-                                            <img src="./img/pulizia.png" style="display: inline-block; margin-right: 30px;" alt="">
-                                        </div>
-                                        <div class="title-card">
-                                            <span>Pulizia</span>
-                                        </div>
-                                        <div class="c-card-body">
-                                            <span>
-                                                We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from 1 to 5. If
-                                                something
-                                                goes wrong,
-                                                we will come and fix everything. <span class="primary-color">We do not want to make money on
-                                                    dissatisfied
-                                                    customers.</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="service-card" id="card-3" style="padding-top: 12px;">
-                                        <div class="card-icon">
-                                            <img src="./img/attrezzatura.png" style="width: 100%; height: 100%;" alt="">
-                                        </div>
-                                        <div class="title-card" style="margin-top: 18px;">
-                                            <span>Attrezzatura</span>
-                                        </div>
-                                        <div class="c-card-body">
-                                            <span>
-                                                We always ask for feedback on cleaning, we ask you to rate the work of the cleaner from 1 to 5. If
-                                                something
-                                                goes wrong,
-                                                we will come and fix everything. <span class="primary-color">We do not want to make money on
-                                                    dissatisfied
-                                                    customers.</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                </div>
-
-            </div>
-
-            
-
-        <!-- SEZIONE CHI SIAMO -->
-        <div id="chi-siamo" class="sections">
-
-            <div class="title-page">
-                <span>Chi Siamo</span>
-            </div>
-
-            <div class="car">
-                <img src="img/car.png" alt="">
-
-                <div class="card-main">
-
-                </div>
-            </div>
-
+    
+            <div style="height: 300px; width: 10px;"></div>
+    
         </div>
-
-        <div style="height: 200px; width: 10px;"></div>
-
-    </div>
+    </span>
 
 
     <script src="script/aos.js"></script>
@@ -276,4 +328,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
 </body>
+
 </html>

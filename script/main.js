@@ -6,7 +6,9 @@ jQuery(document).ready(function($) {
         (e) => {
             if (window.innerHeight < 500) {
                 $('.turnDeviceNotification').css('display', 'flex').css('flex-direction', 'column').css('align-items', 'center').css('justify-content', 'center');
+                $('#main-content').addClass('display-none');
             } else {
+                $('#main-content').removeClass('display-none');
                 $('.turnDeviceNotification').css('display', 'none');
             }
         },
@@ -17,7 +19,9 @@ jQuery(document).ready(function($) {
     screen.orientation.addEventListener('change', function (e) {
         if (e.currentTarget.type === 'landscape-primary' && window.innerWidth <= 576) {
             $('.turnDeviceNotification').css('display', 'flex').css('flex-direction', 'column').css('align-items', 'center').css('justify-content', 'center');
+            $('#main-content').addClass('display-none');
         } else {
+            $('#main-content').removeClass('display-none');
             $('.turnDeviceNotification').css('display', 'none');
         }
     })

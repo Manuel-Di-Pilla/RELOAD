@@ -1,343 +1,350 @@
 @font-face {
-    font-family: "Liliana";
-    src: url(../font/Liliana_Bold.otf);
+  font-family: "Liliana";
+  src: url(../font/Liliana_Bold.otf);
 }
 @font-face {
-  font-family: "Gilroy";
-  src: url(../font/gilroy/Gilroy-SemiBold.ttf);
+font-family: "Gilroy";
+src: url(../font/gilroy/Gilroy-Bold.ttf);
 }
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Gilroy";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy";
 }
 
 .primary-color {
-  color: #F9B233;
+color: #F9B233;
 }
 
 .display-none {
-  display: none !important;
+display: none !important;
 }
 
 .display-block {
-  display: block;
+display: block;
 }
 
 .visibility-visible {
-  visibility: visible;
+visibility: visible;
 }
 
 .visibility-hidden {
-  visibility: hidden;
+visibility: hidden;
 }
 
 .manu-black{
-  background-color: black !important;
+background-color: black !important;
 }
 
 
 #start{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-.background-image{
-    background-image: url(../img/background-home.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.filigrana-image{
-    background-image: url(../img/filigrana.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.logo-title{
-  color: white;
-  font-size: 19px;
-}
-
-#filigrana{
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-50%,-50%);
-}
-
-#container-logo{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.under-logo {
-  width: 100%;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.under-logo b{
-  font-family: "Liliana";
-  font-size: 15.7px;
-}
-
-#home-desc{
-    position: absolute;
-    bottom: 50px;
-    left: 60px;
-}
-
-#home-desc b {
-    font-family: "Liliana";
-}
-
-.home-text{
-  font-size: 55px;
-  color: white;
-  margin: 0;
-}
-
-.fixed {
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2000;
-}
-
-.navbar-style{
-  width: 100%;
-  background-color: rgba(0,0,0, 0.55);
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar-style ul {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0;
-  padding: 0;
-}
-.navbar-style ul li{
-  display: block;
-  margin: 0 30px;
-}
-.navbar-style ul li a{
-  text-decoration: none;
-  font-size: 18px;
-  padding-top: 7px;
-  width: 125px;
-  height: 40px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-}
-
-#hidden-menu ul {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0;
-  padding: 0;
-}
-
-#hidden-menu ul li {
-  display: block;
-  margin: 10px 0;
-}
-
-#hidden-menu ul li a {
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-.white {
-  color: white;
-}
-
-#small-menu{
-  display: none;
-  position: fixed;
-  left: 10px;
-  top: 5px;
-}
-
-#hidden-menu{
-  width: 100%;
-  background-color: #353535;
-  border-radius: 0 0 10% 10%;
-}
-
-.close-menu{
-  width: 100%;
-}
-
-#servizi{
-  overflow: hidden;
-}
-
-.servizi-cls{
-  width: 100%;
-  background: url(../img/services.png) ;
-  background-size: contain;
-  background-position: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px 0;
-  max-height: 70vh;
-  height: 70vh;
-}
-
-.title-page{
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  color: black;
-  width: 100%;
-  font-size: 40px;
-}
-
-.title-page span{
-  color: black;
-  font-size: 35px;
-  border-bottom: 3px solid #F9B233;
-  padding-bottom: 2px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.service-card{
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  background-color: white;
-  width: auto;
-  padding: 20px;
-  margin: 30px 30px;
-  -webkit-box-shadow: 0px 1px 11px 0px #292424;
-  box-shadow: 0px 1px 11px 0px #292424;
-}
-
-.card-icon i {
-  color: #F9B233;
-  font-size: 70px;
-}
-
-.title-card{
-  text-align: center;
-  margin-top: 10px;
-}
-
-.title-card span{
-  color: black;
-  border-bottom: 3px solid #F9B233;
-  padding-bottom: 2px;
-  font-size: 25px;
-}
-
-.c-card-body{
-  text-align: center;
-  margin-top: 30px;
-}
-
-.active{
-  background-color: #F9B233;
-}
-
-.servizi-cls-mobile{
-  background: url(../img/services.png);
-  background-size: contain;
-  background-position: center;
-}
-
-.splide__arrow--next{
-  background-color: #F9B233 !important;
-}
-
-.splide__arrow--prev{
-  background-color: #F9B233 !important;
-}
-
-.splide__arrow svg{
-  fill: white !important;
-}
-
-.splide__pagination__page.is-active{
-  background-color: #F9B233 !important;
-}
-
-.splide__pagination__page {
-  background-color: black !important;
-}
-
-.turnDeviceNotification {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: none;
-  z-index: 999999;
-  background-color: #353535;
-  width: 100vw;
   height: 100vh;
-}
-
-.turnDeviceNotification div{
-  color: white;
-  font-size: 40px;
-}
-
-#chi-siamo{
-  width: 100%;
-  height: 80vh;
-}
-
-.car{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
   position: relative;
 }
 
+.background-image{
+  background-image: url(../img/background-home.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.filigrana-image{
+  background-image: url(../img/filigrana.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo-title{
+color: white;
+font-size: 19px;
+}
+
+#filigrana{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+transform: translate(-50%,-50%);
+}
+
+#container-logo{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.under-logo {
+width: 100%;
+margin-top: 10px;
+display: flex;
+justify-content: center;
+}
+
+.under-logo b{
+font-family: "Liliana";
+font-size: 15.7px;
+}
+
+#home-desc{
+  position: absolute;
+  bottom: 50px;
+  left: 60px;
+}
+
+#home-desc b {
+  font-family: "Liliana";
+}
+
+.home-text{
+font-size: 55px;
+color: white;
+margin: 0;
+}
+
+.fixed {
+width: 100%;
+height: 70px;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 2000;
+}
+
+.navbar-style{
+width: 100%;
+background-color: rgba(0,0,0, 0.55);
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navbar-style ul {
+display: flex;
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+margin-bottom: 0;
+padding: 0;
+}
+.navbar-style ul li{
+display: block;
+margin: 0 25px;
+}
+.navbar-style ul li a{
+text-decoration: none;
+font-size: 18px;
+padding-top: 7px;
+width: 125px;
+height: 40px;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+}
+
+#hidden-menu ul {
+display: flex;
+width: 100%;
+height: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 0;
+padding: 0;
+}
+
+#hidden-menu ul li {
+display: block;
+margin: 10px 0;
+}
+
+#hidden-menu ul li a {
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 10px;
+}
+
+.white {
+color: white;
+}
+
+#small-menu{
+display: none;
+position: fixed;
+left: 10px;
+top: 5px;
+}
+
+#hidden-menu{
+width: 100%;
+background-color: #353535;
+border-radius: 0 0 10% 10%;
+}
+
+.close-menu{
+width: 100%;
+}
+
+#servizi{
+overflow: hidden;
+}
+
+.servizi-cls{
+width: 100%;
+background: url(../img/services.png) ;
+background-size: contain;
+background-position: center;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 20px 0;
+max-height: 70vh;
+height: 70vh;
+}
+
+.title-page{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 40px;
+color: black;
+width: 100%;
+font-size: 40px;
+}
+
+.title-page span{
+color: black;
+font-size: 35px;
+border-bottom: 3px solid #F9B233;
+padding-bottom: 2px;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.service-card{
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 10px;
+background-color: white;
+width: auto;
+padding: 20px;
+margin: 30px 30px;
+-webkit-box-shadow: 0px 1px 11px 0px #292424;
+box-shadow: 0px 1px 11px 0px #292424;
+}
+
+.card-icon i {
+color: #F9B233;
+font-size: 70px;
+}
+
+.title-card{
+text-align: center;
+margin-top: 10px;
+}
+
+.title-card span{
+color: black;
+border-bottom: 3px solid #F9B233;
+padding-bottom: 2px;
+font-size: 25px;
+}
+
+.c-card-body{
+text-align: center;
+margin-top: 30px;
+}
+
+.active{
+background-color: #F9B233;
+}
+
+.servizi-cls-mobile{
+background: url(../img/services.png);
+background-size: contain;
+background-position: center;
+}
+
+.splide__arrow--next{
+background-color: #F9B233 !important;
+}
+
+.splide__arrow--prev{
+background-color: #F9B233 !important;
+}
+
+.splide__arrow svg{
+fill: white !important;
+}
+
+.splide__pagination__page.is-active{
+background-color: #F9B233 !important;
+}
+
+.splide__pagination__page {
+background-color: black !important;
+}
+
+.turnDeviceNotification {
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+display: none;
+z-index: 999999;
+background-color: #353535;
+width: 100vw;
+height: 100vh;
+}
+
+.turnDeviceNotification div{
+color: white;
+font-size: 40px;
+}
+
+#chi-siamo{
+width: 100%;
+height: 80vh;
+}
+
+.car{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+position: relative;
+}
+
 .car img{
-  max-width: 100%;
-  max-height: 100%;
-  display: inline-block;
-  margin-left: 30%;
+max-width: 100%;
+max-height: 100%;
+display: inline-block;
+margin-left: 30%;
+border-radius: 10px;
 }
 
 .card-main{
-  height: 100%;
-  width: 30%;
-  border-radius: 10px;
-  border: 1.5px solid #F9B233;
-  position: absolute;
-  left: 20%;
-  backdrop-filter: blur(15px);
+height: 100%;
+width: 30%;
+border-radius: 10px;
+border: 2px solid #F9B233;
+position: absolute;
+left: 20%;
+backdrop-filter: blur(15px);
+background-color: rgba(255, 255, 255, 0.8);
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
 }

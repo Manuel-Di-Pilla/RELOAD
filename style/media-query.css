@@ -9,25 +9,17 @@
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     #servizi, #chi-siamo{
         padding-top: 70px;
     }
 }
 
-@media screen and (max-height: 792px) and (min-width: 770px) {
-
-}
-
-@media (max-height: 645px){
-
-}
-
-
 @media (min-width: 992px) {
     .mobile{
         display: none;
     }
+
     .desktop{
         display: block;
     }
@@ -47,7 +39,8 @@
         cursor: default;
     }
 }
-@media (max-width: 991px) {
+
+@media (max-width: 1024px) {
     .mobile {
         display: block;
     }
@@ -56,9 +49,19 @@
         display: none;
     }
 
+    .car img{
+        margin-left: 0;
+    }
+
+    .card-main{
+        left: unset;
+        width: 80%;
+    }
+
     .service-card{
         width: auto !important;
         margin: 30px !important;
+        height: auto;
     }
 }
 
@@ -91,5 +94,11 @@
 
     .under-logo b{
         font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .card-main p {
+        font-size: 25px;
     }
 }
