@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 1024px) {
-    #servizi, #chi-siamo{
+    #servizi, #chi-siamo, #lavori{
         padding-top: 70px;
     }
 }
@@ -53,9 +53,22 @@
         margin-left: 0;
     }
 
-    .card-main{
+    .car .card-main,
+    .work .card-main {
         left: unset;
         width: 80%;
+    }
+    .work .card-main{
+        backdrop-filter: unset;
+    }
+
+    .work img {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .work{
+        justify-content: center;
     }
 
     .service-card{
@@ -98,7 +111,8 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .card-main p {
+    .car .card-main p,
+    .work .card-main p {
         font-size: 25px;
     }
 }
