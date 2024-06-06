@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 1024px) {
-    #servizi, #chi-siamo, #lavori{
+    #servizi, #chi-siamo, #lavori, #shop{
         padding-top: 70px;
     }
 }
@@ -92,7 +92,8 @@
     }
 
     #chi-siamo,
-    #lavori {
+    #lavori,
+    #shop {
         height: auto;
     }
 }
