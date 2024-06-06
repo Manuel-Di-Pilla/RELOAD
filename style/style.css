@@ -330,30 +330,13 @@
 } */
 
 .car {
-  width: 100%;
   height: calc(100% - 120px);
   display: flex;
   justify-content: center;
   position: relative;
 }
 
-.car img {
-  max-width: 100%;
-  max-height: 100%;
-  display: inline-block;
-  margin-left: 30%;
-  border-radius: 10px;
-}
-
-.car .card-main {
-  height: 100%;
-  width: 30%;
-  border-radius: 10px;
-  border: 2px solid #F9B233;
-  position: absolute;
-  left: 20%;
-  backdrop-filter: blur(15px);
-  background-color: rgba(255, 255, 255, 0.8);
+.card-main {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -362,32 +345,20 @@
 }
 
 .work{
-  width: 100%;
   height: calc(100% - 120px);
-  display: flex;
-  position: relative;
 }
 
-.work img {
-  width: 31%;
-  max-width: 100%;
-  max-height: 100%;
-  display: inline-block;
-  margin-left: 20%;
-  border-radius: 10px;
+#chi-siamo-img{
+  min-height: 200px;
+  background-image: url(../img/car.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.work .card-main {
-  height: 100%;
-  width: 30%;
-  border-radius: 10px;
-  border: 2px solid #F9B233;
-  position: absolute;
-  left: 50%;
-  backdrop-filter: blur(15px);
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+#lavori-img {
+  min-height: 200px;
+  background-image: url(../img/Lavori.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

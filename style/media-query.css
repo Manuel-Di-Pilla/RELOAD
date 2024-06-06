@@ -53,24 +53,6 @@
         margin-left: 0;
     }
 
-    .car .card-main,
-    .work .card-main {
-        left: unset;
-        width: 80%;
-    }
-    .work .card-main{
-        backdrop-filter: unset;
-    }
-
-    .work img {
-        width: auto;
-        margin-left: 0;
-    }
-
-    .work{
-        justify-content: center;
-    }
-
     .service-card{
         width: auto !important;
         margin: 30px !important;
@@ -108,11 +90,15 @@
     .under-logo b{
         font-size: 13px;
     }
+
+    #chi-siamo,
+    #lavori {
+        height: auto;
+    }
 }
 
+
+/* TABLET */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .car .card-main p,
-    .work .card-main p {
-        font-size: 25px;
-    }
+
 }
