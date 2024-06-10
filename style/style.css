@@ -324,12 +324,6 @@
   padding-bottom: 20px;
 }
 
-/* #lavori {
-  width: 100%;
-  margin-top: 20vh;
-  height: 80vh;
-} */
-
 .car, .shop {
   height: calc(100% - 120px);
   display: flex;
@@ -376,4 +370,59 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.modale-contatti{
+  height: 100%;
+  width: 80%;
+  border: 2px solid #F9B233;
+  border-radius: 10px;
+  padding: 0 !important;
+}
+
+.header-contatti{
+  background-color: #F9B233;
+  position: relative;
+  border-radius: 6px 6px 0 0;
+}
+.header-contatti i{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-contatti{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.input-contatti div{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+input{
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 40px;
+  outline: none;
+  padding: 2px 5px;
+  margin-top: 3px;
+}
+
+input:focus, input:active{
+  border-color: #F9B233;
+}
+
+#send{
+  background: #F9B233;
+  border: none;
+  border-radius: 30px;
+  width: fit-content;
+  color: white;
+  padding: 8px 46px;
 }

@@ -1578,7 +1578,7 @@ progress {
 
     .col-lg-4-margin {
         flex: 0 0 auto;
-        width: calc(33.33333333% - 20px)
+        width: calc(33.33333333% - 40px)
     }
 
     .col-lg-5 {

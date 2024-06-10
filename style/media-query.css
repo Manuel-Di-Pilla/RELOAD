@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 1024px) {
-    #servizi, #chi-siamo, #lavori, #shop{
+    #servizi, #chi-siamo, #lavori, #shop, #contatti{
         padding-top: 70px;
     }
 }
