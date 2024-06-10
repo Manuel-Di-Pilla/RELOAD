@@ -55,6 +55,7 @@
 
     .service-card{
         width: auto !important;
+        max-width: 100% !important;
         margin: 30px !important;
         height: auto;
     }
@@ -93,8 +94,18 @@
 
     #chi-siamo,
     #lavori,
-    #shop {
+    #shop,
+    #contatti {
         height: auto;
+    }
+
+    .modale-contatti{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .text-shop{
+        margin: 40px !important;
     }
 }
 

@@ -8,6 +8,11 @@
   src: url(../font/gilroy/Gilroy-Bold.ttf);
 }
 
+@font-face {
+  font-family: "Gilroy-medium";
+  src: url(../font/gilroy/Gilroy-Medium.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,7 +52,7 @@
 }
 
 .background-image {
-  background-image: url(../img/background-home.png);
+  background-image: url(../img/background-home.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -201,11 +206,14 @@
   overflow: hidden;
 }
 
+.desktop, .mobile{
+    background: url(../img/services.png);
+    background-size: contain;
+    background-position: center;
+}
+
 .servizi-cls {
   width: 100%;
-  background: url(../img/services.png);
-  background-size: contain;
-  background-position: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -233,13 +241,14 @@
 }
 
 .service-card {
-  height: 100%;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
   background-color: white;
   width: auto;
+  max-width: 500px;
   padding: 20px;
   margin: 30px 30px;
   -webkit-box-shadow: 0px 1px 11px 0px #292424;
@@ -318,7 +327,8 @@
 
 #chi-siamo,
 #lavori,
-#shop {
+#shop,
+#contatti {
   width: 100%;
   height: 100vh;
   padding-bottom: 20px;
@@ -405,17 +415,31 @@
   margin: 10px 0;
 }
 
+.input-contatti div label{
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
 input{
   border: 1px solid black;
   border-radius: 5px;
   height: 40px;
   outline: none;
   padding: 2px 5px;
-  margin-top: 3px;
 }
 
-input:focus, input:active{
-  border-color: #F9B233;
+textarea{
+  height: 150px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus,
+textarea:focus-visible{
+  outline: none !important;
+  border-color: #F9B233 !important;
 }
 
 #send{
@@ -425,4 +449,39 @@ input:focus, input:active{
   width: fit-content;
   color: white;
   padding: 8px 46px;
+}
+
+#logo-white{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-white img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.medium{
+  font-family: "Gilroy-medium";
+  margin: 5px 0;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-pointer{
+  cursor: pointer;
 }
