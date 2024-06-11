@@ -242,6 +242,7 @@
 
 .service-card {
   height: 500px;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -327,11 +328,15 @@
 
 #chi-siamo,
 #lavori,
-#shop,
-#contatti {
+#shop {
   width: 100%;
   height: 100vh;
   padding-bottom: 20px;
+}
+
+#contatti{
+  min-height: 100vh;
+  margin-bottom: 40px;
 }
 
 .car, .shop {
@@ -461,6 +466,7 @@ textarea:focus-visible{
 #logo-white img {
   max-height: 100%;
   max-width: 100%;
+  width: 80%;
 }
 
 .medium{
