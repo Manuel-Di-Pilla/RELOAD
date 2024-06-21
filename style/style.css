@@ -393,6 +393,7 @@
   border: 2px solid #F9B233;
   border-radius: 10px;
   padding: 0 !important;
+  background-color: white;
 }
 
 .header-contatti{
@@ -425,7 +426,7 @@
   margin-bottom: 5px;
 }
 
-input{
+.input-contatti input {
   border: 1px solid black;
   border-radius: 5px;
   height: 40px;
@@ -433,7 +434,7 @@ input{
   padding: 2px 5px;
 }
 
-textarea{
+.input-contatti textarea {
   height: 150px;
   outline: none;
   border: 1px solid black;
@@ -490,4 +491,72 @@ textarea:focus-visible{
 
 .social-pointer{
   cursor: pointer;
+}
+
+#fab-form{
+  position: fixed;
+  z-index: 9999;
+  right: 30px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.fab-rounded{
+  background-color: #F9B233;
+  padding: 12px 11px 10px 12px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed-form{
+   position: fixed;
+   z-index: 9999;
+   right: 20px;
+   bottom: 20px;
+   overflow: hidden;
+}
+
+.modale-contatti-fixed {
+  height: 480px;
+  width: 350px;
+  border: 2px solid #F9B233;
+  border-radius: 10px;
+  padding: 0 !important;
+  background-color: white;
+}
+
+.input-contatti-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  overflow-y: auto;
+}
+
+.input-contatti-flex div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.input-contatti-flex div label {
+  display: inline-block;
+  margin-bottom: 3px;
+  font-size: 13px;
+}
+
+.input-contatti-flex input {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 35px;
+  outline: none;
+  padding: 2px 5px;
+}
+
+.input-contatti-flex textarea {
+  height: 65px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
 }

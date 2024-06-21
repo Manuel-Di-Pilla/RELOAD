@@ -24,6 +24,17 @@ jQuery(document).ready(function ($) {
             item.classList.remove('active');
             if (item.href.includes(current)) {
                 item.classList.add("active")
+                if(current == "contatti"){
+                    if(!$('#fab-form').hasClass('display-none')){
+                        $('#fab-form').removeClass('slide-in-right').addClass('display-none');
+                    } else {
+                        $('#fixed-form').removeClass('slide-in-fwd-br').addClass('slide-out-fwd-br');
+                    }
+                } else {
+                    if ($('#fab-form').hasClass('display-none') && !$('#fixed-form').hasClass('slide-in-fwd-br')) {
+                        $('#fab-form').removeClass('display-none').addClass('slide-in-right');
+                    }
+                }
             } else {
                 item.classList.remove("active")
 

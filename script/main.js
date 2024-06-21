@@ -40,6 +40,10 @@ jQuery(document).ready(function($) {
             $('#small-menu').removeClass('display-none');
 
             setTimeout(() => {
+                $('#fab-form').removeClass('display-none').addClass('slide-in-right');
+            }, 1500);
+
+            setTimeout(() => {
                 $('#main').removeClass('display-none');
                 AOS.init({
                     duration: 800,
@@ -74,6 +78,16 @@ jQuery(document).ready(function($) {
             $('#hidden-menu').addClass('slide-out-top');
             $('#small-menu').removeClass('display-none');
         }, 200);
+    });
+
+    $('#fab-form').click(() => {
+        $('#fab-form').addClass('display-none');
+        $('#fixed-form').removeClass('display-none').removeClass('slide-out-fwd-br').addClass('slide-in-fwd-br');
+    })
+
+    $('#mark-fixed-form').click(() => {
+        $('#fixed-form').removeClass('slide-in-fwd-br').addClass('slide-out-fwd-br');
+        $('#fab-form').removeClass('display-none').removeClass('slide-in-right');
     })
 
  })
